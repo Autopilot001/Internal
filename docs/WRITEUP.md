@@ -98,11 +98,4 @@ This room reinforced the value of moving from evidence to hypothesis one layer a
 
 The defensive issues I would prioritize in a real environment are:
 
-- Remove secrets from backup files and rotate any credentials that were exposed.
-- Avoid reusing credentials across accounts or services.
-- Restrict WordPress administrative access and disable unsafe code-editing capabilities where possible.
-- Prevent application code from launching operating-system commands without strict controls.
-- Keep Jenkins off user-accessible networks, enforce strong authentication, and disable or tightly restrict Script Console access.
-- Segment container networks and monitor access to internal-only services.
-- Audit authentication and administrative actions, then test that remediation closes the path end to end.
-
+I would remove exposed secrets, prevent credential reuse, restrict WordPress and Jenkins administration, isolate internal services, and audit privileged activity.
