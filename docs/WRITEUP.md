@@ -106,6 +106,3 @@ The defensive issues I would prioritize in a real environment are:
 - Segment container networks and monitor access to internal-only services.
 - Audit authentication and administrative actions, then test that remediation closes the path end to end.
 
-## Redaction note
-
-The screenshots folder contains only the supplied step screenshots, converted to PNG and redacted for this public record. Original images, credentials, IP addresses, flag values, generated payload files, and executable artifacts are not included.
