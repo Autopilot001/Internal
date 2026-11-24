@@ -1,4 +1,4 @@
-# Internal — TryHackMe Room Notes
+# Internal Room Notes
 
 **Author:** Mohamed Nabil Algamoudi  
 **Room:** [Internal](https://tryhackme.com/room/internal)  
