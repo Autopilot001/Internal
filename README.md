@@ -18,7 +18,7 @@ I began by mapping exposed services and discovering the WordPress site, then ass
 
 ## Lessons learned
 
-- Treat exposed web services as an attack surface and enumerate methodically.
-- Validate findings before using them to make the next decision.
-- Keep testing scoped to the assigned lab.
-- In a real environment, rotate exposed secrets, remove unsafe application paths, restrict administrative consoles, and segment internal services.
+Treat exposed web services as an attack surface and enumerate methodically.
+ validate findings before using them to make the next decision.
+ keep testing scoped to the assigned lab.
+ in a real environment, rotate exposed secrets remove unsafe application paths restrict administrative consoles and segment internal services.
