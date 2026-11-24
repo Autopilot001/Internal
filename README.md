@@ -8,9 +8,9 @@ This repository documents my completed, authorized run of the TryHackMe **Intern
 
 > **Scope:** The assigned TryHackMe room instance only.
 
-## Walkthrough
+## work
 
-The step-by-step narrative and screenshot gallery are in [docs/WRITEUP.md](docs/WRITEUP.md).
+The narrative and screenshot gallery are in [docs/WRITEUP.md](docs/WRITEUP.md).
 
 ## Methodology
 
