@@ -10,13 +10,13 @@ I completed this workflow in the assigned TryHackMe **Internal** room instance. 
 
 I am publishing a sanitized record of my process. In these copies, I obscured IP addresses, passwords and other credentials, and flag contents. I have not included recovered secrets or executable files. The screenshots below are the supplied step screenshots, redacted for publication.
 
-## 1. I mapped the exposed services
+## 1.  mapped the exposed services
 
 I started with a full TCP service scan of the assigned host. The results showed SSH and an HTTP service running Apache on Ubuntu. That gave me two paths to investigate: the web application first, then SSH if I found an authorized credential or useful lead.
 
 ![Step 1 — TCP service enumeration; target address redacted](../screenshots/step-01.png)
 
-## 2. I enumerated the web paths
+## 2.  enumerated the web paths
 
 I used directory discovery against the web root. The results pointed to a blog and a WordPress installation. I noted the discovered paths and followed the blog path for a more focused check.
 
@@ -32,7 +32,7 @@ I then enumerated the blog paths to confirm the administrative area and related 
 
 ![Step 4 — Blog path discovery; target details redacted](../screenshots/step-04.png)
 
-## 4. I validated access and inspected the application
+## 4.  validated access and inspected the application
 
 The next screenshot records the authentication testing result. Account names and password material are covered. I used the resulting access to inspect the WordPress administration interface.
 
