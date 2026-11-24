@@ -1,7 +1,6 @@
 # Internal Room Notes
 
-**Author:** Mohamed Nabil Algamoudi  
-**Room:** [Internal](https://tryhackme.com/room/internal)  
+**Author:** Mohamed Nabil Algamoudi   
 **Focus:** External, web application, and internal penetration testing methodology
 
 This repository documents my completed, authorized run of the home lab **Internal** room. I used the screenshots as my working notes and placed each image beside the step it records. I have masked target and host IP addresses, credentials, and both flag values in the public copies. The screenshots are evidence of the workflow; this repository contains no secrets or executable payload files.
