@@ -1,4 +1,4 @@
-# Internal — My TryHackMe Walkthrough
+# Internal 
 
 **Author:** Mohamed Nabil Algamoudi  
 **Room:** [Internal](https://tryhackme.com/room/internal)  
@@ -6,13 +6,13 @@
 
 ## Scope and handling
 
-I completed this workflow in the assigned TryHackMe **Internal** room instance. The room is described as a black-box assessment covering external, web application, and internal testing. My scope was the assigned target only.
+I completed this workflow in the assigned TryHackMe **Internal** room instance. The room is described as a blackbox assessment covering external, web application, and internal testing. My scope was the assigned target only.
 
-I am publishing a sanitized record of my process. In these copies, I obscured IP addresses, passwords and other credentials, and flag contents. I have not included recovered secrets or executable files. The screenshots below are the supplied step screenshots, redacted for publication.
+I am publishing a sanitized record of my process. In these copies I obscured IP addresses passwords and other credentials and flag contents. I have not included recovered secrets or executable files. The screenshots below are the supplied step screenshots redacted for publication.
 
 ## 1.  mapped the exposed services
 
-I started with a full TCP service scan of the assigned host. The results showed SSH and an HTTP service running Apache on Ubuntu. That gave me two paths to investigate: the web application first, then SSH if I found an authorized credential or useful lead.
+I started with a full TCP service scan of the assigned host. The results showed SSH and an HTTP service running Apache on Ubuntu. That gave me two paths to investigate: the web application first then SSH if I found an authorized credential or useful lead.
 
 ![Step 1 — TCP service enumeration; target address redacted](../screenshots/step-01.png)
 
@@ -58,7 +58,7 @@ I checked the /opt directory and found a WordPress backup file. The screenshot o
 
 ![Step 11 — Backup note; credentials obscured](../screenshots/step-11.png)
 
-## 6. I followed the user and internal-service clues
+## 6. I followed the user and internal service clues
 
 I checked the user home directory and verified the user-level proof file. The flag value is intentionally masked. I also reviewed the accompanying note, which identified a Jenkins service listening on an internal Docker network address. The address is covered in this screenshot.
 
@@ -72,7 +72,7 @@ I used SSH local port forwarding to make the internal Jenkins web service reacha
 
 ## 7. I assessed Jenkins and recorded the next access level
 
-The forwarded service presented a Jenkins login page. After validating access in the lab, I reviewed its administrative interface and located the Script Console feature. I am documenting the observed workflow without publishing a reusable command payload.
+The forwarded service presented a Jenkins login page. After validating access in the lab I reviewed its administrative interface and located the Script Console feature. I am documenting the observed workflow without publishing a reusable command payload.
 
 ![Step 15 — Jenkins login page](../screenshots/step-15.png)
 
@@ -94,7 +94,7 @@ I reviewed the note available to the Jenkins account. It contained root credenti
 
 ## Reflection and defensive takeaways
 
-This room reinforced the value of moving from evidence to hypothesis one layer at a time: service discovery led to web content discovery, the application foothold exposed local configuration clues, and the internal Jenkins service provided the next boundary to assess.
+This room reinforced the value of moving from evidence to hypothesis one layer at a time: service discovery led to web content discovery the application foothold exposed local configuration clues and the internal Jenkins service provided the next boundary to assess.
 
 The defensive issues I would prioritize in a real environment are:
 
