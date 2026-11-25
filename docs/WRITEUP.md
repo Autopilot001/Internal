@@ -1,7 +1,7 @@
 # Internal 
 
 **Author:** Mohamed Nabil Algamoudi  
-**Assessment path:** External reconnaissance → web application → internal service → privilege verification
+**Assessment path:** External reconnaissance > web application > internal service > privilege verification
 
 ## Scope and handling
 
