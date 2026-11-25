@@ -1,7 +1,6 @@
 # Internal 
 
 **Author:** Mohamed Nabil Algamoudi  
-**Room:** [Internal](https://tryhackme.com/room/internal)  
 **Assessment path:** External reconnaissance → web application → internal service → privilege verification
 
 ## Scope and handling
